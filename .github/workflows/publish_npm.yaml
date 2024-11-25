@@ -1,4 +1,4 @@
-name: Publish Package to NPM and GitHub Packages
+name: Publish Package to NPM
 
 on:
   release:
@@ -15,7 +15,6 @@ jobs:
         with:
           node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
-          scope: '@eevos'
 
       - name: Install modules
         run: npm install
